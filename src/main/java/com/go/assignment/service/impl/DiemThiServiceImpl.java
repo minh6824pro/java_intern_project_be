@@ -27,6 +27,9 @@ public class DiemThiServiceImpl implements DiemThiService {
     @Override
     @Cacheable(value = "diemthi", key = "#sbd")
     public DiemThi findBySbd(String sbd) {
+        if (sbd == null || !sbd.matches("^\\d{8}$")) {
+            throw new IllegalArgumentException("SBD phải có đúng 8 chữ số");
+        }
         return repository.findById(sbd)
                 .orElseThrow(() -> new SbdNotFoundException(sbd));
     }
