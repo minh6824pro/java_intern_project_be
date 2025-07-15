@@ -27,3 +27,5 @@ spring.cache.type=redis
 spring.cache.redis.time-to-live=86400000
 spring.cache.redis.key-prefix=diemthi:
 
+# FE
+app.frontend.origin=
