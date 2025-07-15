@@ -78,7 +78,7 @@ public class Seeder implements CommandLineRunner {
                 if (batch.size() >= BATCH_SIZE) {
                     processBatch(batch, totalRecords, batchCount++);
                     batch = new ArrayList<>(BATCH_SIZE);
-                }
+            }
 
                 // In tiến độ mỗi 50,000 records
                 if (totalRecords % 50000 == 0) {
