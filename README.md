@@ -21,7 +21,7 @@ A Spring Boot-based REST API for managing and analyzing exam scores with efficie
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/java_intern_project_be
+git clone https://github.com/minh6824pro/java_intern_project_be
 cd java_intern_project_be
 ```
 
